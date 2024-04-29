@@ -1,0 +1,223 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+nav{
+    display: none;
+}
+main {
+    padding: 2em;
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    height: 100vh;
+}
+.sidebar{
+    background-color: lightgray;
+    height: 100%;
+    border-radius: 20px;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 2px 2px 5px gray, -2px -2px 5px gray;
+}
+
+.profile-image{
+    width: 10em;
+    height: 10em;
+    background-color: lightgray;
+    border-radius: 50%;
+    border: 5px solid black;
+}
+.menu-container{
+    padding: 2em;
+    border-top: 1px solid black;
+    margin-top: 2em;
+}
+.menu-container ul li{
+    list-style: none;
+    font-family: 'Poppins';
+    padding: .5em;
+    text-align: left;
+    transition: .2s ease-in;
+}
+.menu-container ul li:hover{
+    background-color: lightblue;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.main-container{
+    background-color: transparent;
+    height: 100%;
+    padding: 4em;
+    font-family: 'Poppins';
+}
+.social-media{
+    background-color: transparent;
+    width: 100%;
+    margin-top: 2em;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.social-media p{
+    font-family: 'Poppins';
+    text-align: center;
+}
+.social-media button{
+    background-color: aqua;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    transition: .5s ease;
+}
+.social-media button:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 3px gray, -1px -1px 3px gray;
+}
+.header h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+}
+.header hr{
+    width: 70%;
+    height: 3px;
+    outline: none;
+    border: none;
+    background-color: black;
+}
+.content{
+    margin-top: 2em;
+    background-color: transparent;
+    padding: 1em;
+    height: 50vh;
+    width: 100%;
+    
+    
+}
+.title{
+    font-size: 2em;
+    text-transform: uppercase;
+}
+.project-container{
+    background-color: transparent;
+    height: 50vh;
+    width: 100%;
+    
+    overflow: hidden;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.project-box{
+    display: flex;
+    flex-direction: row;
+    width: 200%;
+    height: 95%;
+}
+.card-box {
+    width: 200%;
+    height: 95%;
+    display: flex;
+    flex-direction: row;
+}
+.project-item{
+    height: 100%;
+    position: relative;
+    background-color: white;
+    box-shadow: 2px 2px 5px gray, -2px -2px 5px gray;
+    border-radius: 1em;
+    width: 30%;
+    margin: 10px;
+}
+.card-sm{
+    height: 100%;
+    width: 30%;
+    padding: 1em;
+    background-color: white;
+    margin: .5em;
+    border-radius: 1em;
+    box-shadow: 1px 1px 3px gray, -1px -1px 3px gray;
+}
+.knowledge-list{
+    list-style: disc;
+    padding: 1em 2em;
+}
+.certification-container{
+    padding: 2em;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.certification-container a{
+    color: black;
+    text-decoration: none;
+    padding: 1em;
+    background-color: white;
+    border-radius: 10px;
+    transition: .5s ease;
+    margin: 5px;
+}
+.certification-container a:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 3px gray, -1px -1px 3px gray;
+}
+@media (min-width: 700px){
+    .sidebar{
+        left: 0%;
+    }
+}
+@media (max-width: 600px) {
+    nav{
+        display: flex;
+        padding: 1em;
+        background-color: lightgray;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+    }
+    nav button{
+        padding: 1em;
+    }
+    #btn_hidemenu{
+        display: none;
+    }
+    main{
+        background-color: transparent;
+        padding: 0;
+        grid-template-columns: 100% 100%;
+    }
+    .sidebar{
+        position: absolute;
+        left: -100%;
+        border-radius: 0;
+        width: 100%;
+        transition: .5s ease-in;
+        z-index: 1;
+        height: 100%;
+    }
+    .main-container{
+        display: block;
+        padding: 1.5em;
+    }
+    .project-box{
+        width: 600%;
+    }
+    .project-item{
+        width: 100%;
+    }
+    .card-box{
+        width: 400%;
+    }
+    .card-sm{
+        width: 100%;
+        box-shadow: 1px 1px 3px gray, -1px -1px 3px gray;
+    }
+}
