@@ -26,34 +26,57 @@ const about_me = [
 const certifications = [
     {
         link: 'cert.html',
-        title: 'Basic Cloud Computing'
+        title: 'Basic Level of Cloud Computing'
     },
     {
         link: '',
-        title: 'Software Engineering'
+        title: 'Basic Level of Software Engineering'
     },
     {
         link: '',
-        title: 'Software Engineering'
+        title: 'Intermediate Level of Software Engineering'
     },
     {
         link: '',
-        title: 'Software Engineering'
+        title: 'Advance Level of Software Engineering'
     },
     {
         link: '',
-        title: 'Software Engineering'
+        title: 'Principles of Web Development and Introduction to HTML'
     },
     {
         link: '',
-        title: 'Software Engineering'
+        title: 'Using HTML and CSS to Design a Website'
     },
     {
         link: '',
-        title: 'Software Engineering'
+        title: 'Basic Javascript for Web Development'
+    },
+];
+
+const project = [
+    {
+        title: 'Miguro.com',
+        logo: 'logo2.png',
+        description: 'A web site for japanese learner',
+        tools: ['Vue.js', 'HTML', 'CSS', 'Javascript'],
+        live_demo: 'https://rolandosala.github.io/miguro/',
+        repository: 'https://github.com/rolandosala/miguro.git',
     },
     {
-        link: '',
-        title: 'Software Engineering'
+        title: 'Personal Website',
+        logo: 'logo2.png',
+        description: 'This is my personal website',
+        tools: ['Express.js', 'Node.js', 'Postman', 'Javascript'],
+        live_demo: 'https://rolandosala.github.io/miguro/',
+        repository: 'https://github.com/rolandosala/miguro.git',
+    },
+    {
+        title: 'Reviewer.com',
+        logo: 'logo2.png',
+        description: 'A web site for japanese learner',
+        tools: ['Vue.js', 'HTML', 'CSS', 'Javascript'],
+        live_demo: 'https://rolandosala.github.io/miguro/',
+        repository: 'https://github.com/rolandosala/miguro.git',
     }
-]
+];

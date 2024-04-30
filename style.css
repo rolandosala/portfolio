@@ -75,13 +75,15 @@ main {
     text-align: center;
 }
 .social-media button{
-    background-color: aqua;
+    background-color: black;
+    color: white;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     outline: none;
     border: none;
     transition: .5s ease;
+    font-size: 1.5em;
 }
 .social-media button:hover{
     cursor: pointer;
@@ -115,7 +117,6 @@ main {
     background-color: transparent;
     height: 50vh;
     width: 100%;
-    
     overflow: hidden;
     overflow-x: scroll;
     overflow-y: hidden;
@@ -123,7 +124,7 @@ main {
 .project-box{
     display: flex;
     flex-direction: row;
-    width: 200%;
+    width: 100%;
     height: 95%;
 }
 .card-box {
@@ -140,6 +141,20 @@ main {
     border-radius: 1em;
     width: 30%;
     margin: 10px;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: .5s ease;
+}
+.project-item img{
+    width: 60%;
+    height: 60%;
+}
+.project-item:hover{
+    cursor: pointer;
+    box-shadow: 3px 3px 6px black, -3px -3px 6px black;
 }
 .card-sm{
     height: 100%;
@@ -158,8 +173,22 @@ main {
     padding: 2em;
     background-color: transparent;
     display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+    flex-direction: row;
+    width: 600%;
+}
+.certification-item{
+    width: auto;
+    height: 15em;
+    position: relative;
+    background-color: red;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 1em;
+    overflow: hidden;
+}
+.certification-item img{
+    max-width: 100%;
+    max-height: 100%;
 }
 .certification-container a{
     color: black;
@@ -169,10 +198,72 @@ main {
     border-radius: 10px;
     transition: .5s ease;
     margin: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 .certification-container a:hover{
     cursor: pointer;
     box-shadow: 1px 1px 3px gray, -1px -1px 3px gray;
+}
+.modal{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.modal-content{
+    width: 30%;
+    height: 80vh;
+    padding: 2em;
+    background-color: white;
+    box-shadow: 2px 2px 5px gray, -2px -2px 5px gray;
+    border-radius: 1em;
+    font-family: 'Poppins';
+    display: flex;
+    flex-direction: column;
+}
+.modal-header{
+    padding: 1em 0em;
+}
+.modal-body{
+    width: 100%;
+    background-color: transparent;
+    height: 100%;
+    padding: 1em;
+}
+.modal-body ul{
+    padding: 1em 2em
+}
+.modal a button{
+    width: 100%;
+    padding: 10px;
+    margin: .5em;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    transition: .3s ease-in;
+}
+.modal-body a{
+    width: 100px;
+    height: 100px;
+    text-decoration: none;
+}
+#btn_livedemo{
+    background-color: #008DDA;
+}
+#btn_repository{
+    background-color: #41C9E2;
+}
+.modal-body button:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 4px gray, -2px -2px 4px gray;
 }
 @media (min-width: 700px){
     .sidebar{
