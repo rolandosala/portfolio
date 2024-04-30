@@ -32,6 +32,15 @@ main {
     background-color: lightgray;
     border-radius: 50%;
     border: 5px solid black;
+    position: relative;
+    overflow: hidden    ;
+}
+.profile-image img{
+    max-width: 200%;
+    max-height: 200%;
+    position: absolute;
+    top: -70%;
+    left: -40%;
 }
 .menu-container{
     padding: 2em;

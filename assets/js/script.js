@@ -94,7 +94,7 @@ window.onclick = (event) => {
         for (let i = 0; i < certifications.length; i++) {
             certification.innerHTML += `
             <div class='certification-item'>
-                <img src='../../img/certificate.jpg' />
+                <img src='${certifications[i].image}' />
                 <a href='${certifications[i].link}' target='_blank'>${certifications[i].title}</a>
             </div>
             

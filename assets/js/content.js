@@ -32,44 +32,44 @@ const certifications = [
     {
         link: 'cert.html',
         title: 'Basic Level of Cloud Computing',
-        image: ''
+        image: 'assets/img/certificate.jpg'
     },
     {
         link: '',
         title: 'Basic Level of Software Engineering',
-        image: '../img/certificate.jpg'
+        image: 'assets/img/certificate.jpg'
     },
     {
         link: '',
         title: 'Intermediate Level of Software Engineering',
-        image: '../img/certificate.jpg'
+        image: 'assets/img/certificate.jpg'
     },
     {
         link: '',
         title: 'Advance Level of Software Engineering',
-        image: '../img/certificate.jpg'
+        image: 'assets/img/certificate.jpg'
     },
     {
         link: '',
         title: 'Principles of Web Development and Introduction to HTML',
-        image: '../img/certificate.jpg'
+        image: 'assets/img/certificate.jpg'
     },
     {
         link: '',
         title: 'Using HTML and CSS to Design a Website',
-        image: '../img/certificate.jpg'
+        image: 'assets/img/certificate.jpg'
     },
     {
         link: '',
         title: 'Basic Javascript for Web Development',
-        image: '../img/certificate.jpg'
+        image: 'assets/img/certificate.jpg'
     },
 ];
 
 const project = [
     {
         title: 'Miguro.com',
-        logo: './img/logo2.png',
+        logo: 'assets/img/logo2.png',
         description: 'A web site for japanese learner',
         tools: ['Vue.js', 'HTML', 'CSS', 'Javascript'],
         live_demo: 'https://rolandosala.github.io/miguro/',
@@ -77,7 +77,7 @@ const project = [
     },
     {
         title: 'Personal Website',
-        logo: 'logo2.png',
+        logo: 'assets/img/logo2.png',
         description: 'This is my personal website',
         tools: ['Express.js', 'Node.js', 'Postman', 'Javascript'],
         live_demo: 'https://rolandosala.github.io/miguro/',
