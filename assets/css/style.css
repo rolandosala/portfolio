@@ -85,6 +85,9 @@ main {
     transition: .5s ease;
     font-size: 1.5em;
 }
+.social-media button a{
+    color: white;
+}
 .social-media button:hover{
     cursor: pointer;
     box-shadow: 1px 1px 3px gray, -1px -1px 3px gray;
