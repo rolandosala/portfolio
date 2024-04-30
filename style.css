@@ -14,7 +14,7 @@ main {
     height: 100vh;
 }
 .sidebar{
-    background-color: lightgray;
+    background-color: rgba(255, 255, 255, 0.3);
     height: 100%;
     border-radius: 20px;
     padding: 2em;
@@ -22,7 +22,8 @@ main {
     align-items: center;
     flex-direction: column;
     position: relative;
-    box-shadow: 2px 2px 5px gray, -2px -2px 5px gray;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
 }
 
 .profile-image{
@@ -50,10 +51,14 @@ main {
     border-radius: 20px;
 }
 .main-container{
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
     height: 100%;
     padding: 4em;
     font-family: 'Poppins';
+    margin-left: 1em;
 }
 .social-media{
     background-color: transparent;
@@ -178,7 +183,7 @@ main {
     nav{
         display: flex;
         padding: 1em;
-        background-color: white;
+        background-color: transparent;
         position: sticky;
         top: 0;
         z-index: 2;
@@ -199,17 +204,19 @@ main {
         grid-template-columns: 100% 100%;
     }
     .sidebar{
-        position: absolute;
+        position: fixed;
         left: -110%;
         border-radius: 0;
+        top: 0;
         width: 100%;
         transition: .5s ease-in;
         z-index: 1;
-        height: 100%;
+        height: 100vh;
     }
     .main-container{
-        display: block;
         padding: 1.5em;
+        height: 100%;
+        margin: 0;
     }
     .project-box{
         width: 600%;
