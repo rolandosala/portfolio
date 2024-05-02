@@ -176,6 +176,8 @@ main {
     margin: .5em;
     border-radius: 1em;
     box-shadow: 1px 1px 3px gray, -1px -1px 3px gray;
+    overflow-x: scroll;
+    scrollbar-width: none;
 }
 .knowledge-list{
     list-style: disc;
