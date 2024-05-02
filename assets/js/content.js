@@ -32,37 +32,37 @@ const certifications = [
     {
         link: 'https://drive.google.com/file/d/1TSlIYFAuw2oBWCaTRUYED9V97XPy3NOL/view?usp=drive_link',
         title: 'Basic Level of Cloud Computing',
-        image: 'assets/img/Basic Cloud Computing.png'
+        image: 'assets/img/BasicCloudComputing.png'
     },
     {
         link: 'https://drive.google.com/file/d/1TTmG-Y0238WUYkeE6d1luIKC24xCIfKd/view?usp=drive_link',
         title: 'Basic Level of Software Engineering',
-        image: 'assets/img/Basic Level of Software Engineering.png'
+        image: 'assets/img/BasicLevelofSoftwareEngineering.png'
     },
     {
         link: 'https://drive.google.com/file/d/1qc7fK1Ckz-FgGJ59EI_QWS2V2aiMhBpk/view?usp=drive_link',
         title: 'Intermediate Level of Software Engineering',
-        image: 'assets/img/Intermediate Level of Software Engineering.png'
+        image: 'assets/img/IntermediateLevelofSoftwareEngineering.png'
     },
     {
         link: 'https://drive.google.com/file/d/1fCxXPUG91ukUOITQmyuslw8Gz1cQlBUe/view?usp=drive_link',
         title: 'Advance Level of Software Engineering',
-        image: 'assets/img/Advanced Level of Software Engineering.png'
+        image: 'assets/img/AdvancedLevelofSoftwareEngineering.png'
     },
     {
         link: 'https://drive.google.com/file/d/1fFTYrLPH6AeAGo0R3IWoXc_uR36cZYfI/view?usp=drive_link',
         title: 'Principles of Web Development and Introduction to HTML',
-        image: 'assets/img/Principles of Web Development.png'
+        image: 'assets/img/PrinciplesofWebDevelopment.png'
     },
     {
         link: 'https://drive.google.com/file/d/1_ya9Lve4ivxLNIFUIErMLNNxxuJ6a3Ah/view?usp=drive_link',
         title: 'Using HTML and CSS to Design a Website',
-        image: 'assets/img/Using HTML and CSS.png'
+        image: 'assets/img/UsingHTMLandCSS.png'
     },
     {
         link: 'https://drive.google.com/file/d/16hrcisk_S6m4kgKHBdgUGJo_CK6YEkdJ/view?usp=drive_link',
         title: 'Basic Javascript for Web Development',
-        image: 'assets/img/Basic Javascript for Web Development.png'
+        image: 'assets/img/BasicJavascriptfor WebDevelopment.png'
     }
 ];
 
