@@ -27,60 +27,35 @@ window.onclick = (event) => {
         for (let i = 0; i < project.length; i++) {
             project_box.innerHTML += `
             <div class="project-item">
-                <img src='${project[i].logo}' />
+                <img src='${project[i].img}' />
                 <h2>${project[i].title}</h2>
+                <div class="btn-container">
+                    <a href="${project[i].demo}" target="_blank">
+                        <button>Live Demo</button>
+                    </a>
+                    <a href="${project[i].repository}" target="_blank">
+                        <button>Repository</button>
+                    </a>
+                </div>
             </div>
             `;
-        }
-        let project_item = document.querySelectorAll('.project-item');
-
-        for (let i = 0; i < project_item.length; i++) {
-            project_item[i].onclick = () => {
-                modal.style.display = 'flex';
-                let text = '';
-                for (let x = 0; x < project[i].tools.length; x++) {
-                    text += `<li>${project[i].tools[x]}</li>`;
-                }
-                modal.innerHTML = `
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h2>${project[i].title}</h2>
-                    </div>
-                    <div class="modal-body">
-                        <p>${project[i].description}</p>
-                        <p>Tools Used:</p>
-                        <ul>
-                            ${text}
-                        </ul>
-                        <a href='${project[i].live_demo}'  target='_blank'>
-                        <button id="btn_livedemo">live demo</button></a>
-                        <a href='${project[i].repository}'  target='_blank' ><button id="btn_repository">repository</button></a>
-                    </div>
-                </div>`;
-            }
         }
     } else if (event.target == menu_list[2]) {
         content.innerHTML = `
         <p class="title">tech knowledge</p>
         <div class="project-container">
-            <div class="card-box"></div>
+            <div class="card-box">
+                <div class="box1">
+                    <ul class="knowledge-list"></ul>
+                </div>
+                <div class="box2"></div>
+            </div>
         </div>`;
-        let card_box = document.querySelector('.card-box');
+        let knowledge_list = document.querySelector('.knowledge-list');
         for (let i = 0; i < knowledge.length; i++) {
-            let text = '';
-            for (let x = 0; x < knowledge[i].list.length; x++) {
-                text += `<li>${knowledge[i].list[x]}</li>`;
-            }
-            card_box.innerHTML += `
-                    <div class="card-sm">
-                        <h2>${knowledge[i].title}</h2>
-                        <hr>
-                        <p>${knowledge[i].description}</p>
-                        
-                        <ul class="knowledge-list">
-                            ${text}
-                        </ul>
-                    </div>`;
+            knowledge_list.innerHTML += `
+                <li>${knowledge[i].title}</li>    
+            `;
         }
     } else if (event.target == menu_list[3]) {
         content.innerHTML = `

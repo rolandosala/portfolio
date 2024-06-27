@@ -1,10 +1,5 @@
 const knowledge = [
     {
-        title: 'Cloud Computing',
-        description: 'Basic understanding and familiarity of the technologies stated below.',
-        list: ['Google Cloud Platform', 'Firebase']
-    },
-    {
         title: 'Front-End Development',
         description: 'Intermediate understanding on concepts of building web applications and familiarity on using different frameworks stated below. Please check my projects, Thank you.',
         list: ['HTML, CSS and Javascript', 'Vue.js', 'Bootstrap', 'JQuery']
@@ -18,6 +13,11 @@ const knowledge = [
         title: 'Application Programming Interface',
         description: 'Basic understanding and familiarity on testing request and response using API using the tool below.',
         list: ['Postman']
+    },
+    {
+        title: 'Cloud Computing',
+        description: 'Basic understanding and familiarity of the technologies stated below.',
+        list: ['Google Cloud Platform', 'Firebase']
     },
 ];
 
@@ -68,27 +68,40 @@ const certifications = [
 
 const project = [
     {
-        title: 'Miguro.com',
-        logo: 'assets/img/logo2.png',
-        description: 'A web site for japanese learner',
-        tools: ['Vue.js', 'HTML', 'CSS', 'Javascript'],
-        live_demo: 'https://rolandosala.github.io/miguro/',
-        repository: 'https://github.com/rolandosala/miguro.git',
+        title: 'Vegan Website',
+        description: 'Static landing page for a vegan website.',
+        technology: [
+            { lang: 'Javascript', badge: 'badge bg-success mx-1' },
+            { lang: 'HTML', badge: 'badge bg-primary mx-1' },
+            { lang: 'CSS', badge: 'badge bg-danger mx-1' },
+        ],
+        demo: 'https://rolandosala.github.io/Vegan-Food/',
+        repository: 'https://github.com/rolandosala/Vegan-Food.git',
+        img: 'assets/img/vegan.jpg',
     },
     {
-        title: 'Personal Website',
-        logo: 'assets/img/logo2.png',
-        description: 'This is my personal website',
-        tools: ['Express.js', 'Node.js', 'Postman', 'Javascript'],
-        live_demo: 'https://rolandosala.github.io/miguro/',
-        repository: 'https://github.com/rolandosala/miguro.git',
+        title: 'Digital Clock',
+        description: '',
+        technology: [
+            { lang: 'Javascript', badge: 'badge bg-success mx-1' },
+            { lang: 'HTML', badge: 'badge bg-primary mx-1' },
+            { lang: 'CSS', badge: 'badge bg-danger mx-1' },
+        ],
+        demo: 'https://rolandosala.github.io/Clock/',
+        repository: 'https://github.com/rolandosala/Clock.git',
+        img: 'assets/img/clock.jpg'
     },
     {
-        title: 'Reviewer.com',
-        logo: 'logo2.png',
-        description: 'A web site for japanese learner',
-        tools: ['Vue.js', 'HTML', 'CSS', 'Javascript'],
-        live_demo: 'https://rolandosala.github.io/miguro/',
-        repository: 'https://github.com/rolandosala/miguro.git',
-    }
+        title: 'Digital Clock',
+        description: '',
+        technology: [
+            { lang: 'Javascript', badge: 'badge bg-success mx-1' },
+            { lang: 'HTML', badge: 'badge bg-primary mx-1' },
+            { lang: 'CSS', badge: 'badge bg-danger mx-1' },
+        ],
+        demo: 'https://rolandosala.github.io/Clock/',
+        repository: 'https://github.com/rolandosala/Clock.git',
+        img: 'assets/img/clock.jpg'
+    },
+    
 ];
