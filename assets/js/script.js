@@ -62,17 +62,15 @@ window.onclick = (event) => {
         <p class="title">certifications</p>
         <div class="project-container">
             <div class='certification-container'>
-                
+                 <div class='certification-item'>
+                    <ul class='certification-list'></ul>
+                </div>
             </div>
         </div>`;
-        let certification = document.querySelector('.certification-container');
+        let certification = document.querySelector('.certification-list');
         for (let i = 0; i < certifications.length; i++) {
             certification.innerHTML += `
-            <div class='certification-item'>
-                <img src='${certifications[i].image}' />
-                <a href='${certifications[i].link}' target='_blank'>${certifications[i].title}</a>
-            </div>
-            
+            <li><a href='${certifications[i].link}' target='_blank'>${certifications[i].title}</a></li>
             `;
         }
     } else if (event.target == modal) {

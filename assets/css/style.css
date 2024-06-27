@@ -153,12 +153,12 @@ main {
 .box2{
     background-color: #41C9E2;
 }
-.box1 ul li{
+.box1 ul li, .certification-item ul li{
     padding: 10px;
     font-weight: bold;
 }
-.box1 ul li:hover{
-    color: #41C9E2;
+.box1 ul li:hover, .certification-item ul li a:hover{
+    color: blue;
     text-decoration: underline  ;
     cursor: pointer;
 }
@@ -214,26 +214,26 @@ main {
     overflow-x: scroll;
     scrollbar-width: none;
 }
-.knowledge-list{
+.knowledge-list, .certification-list{
     list-style: disc;
     padding: 1em 2em;
 }
 .certification-container{
-    padding: 2em;
     background-color: transparent;
     display: flex;
     flex-direction: row;
-    width: 600%;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow: scroll;
+    scrollbar-width: none;
 }
 .certification-item{
-    width: auto;
+    width: 100%;
     height: 15em;
     position: relative;
-    background-color: red;
     margin: 10px;
-    border: 1px solid black;
-    border-radius: 1em;
-    overflow: hidden;
+    overflow: scroll;
+    scrollbar-width: none;
 }
 .certification-item img{
     max-width: 100%;
@@ -242,19 +242,11 @@ main {
 .certification-container a{
     color: black;
     text-decoration: none;
-    padding: 1em;
-    background-color: white;
-    border-radius: 10px;
-    transition: .5s ease;
-    margin: 5px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
 }
-.certification-container a:hover{
+/* .certification-container a:hover{
     cursor: pointer;
     box-shadow: 1px 1px 3px gray, -1px -1px 3px gray;
-}
+} */
 .modal{
     position: fixed;
     top: 0;
@@ -359,13 +351,13 @@ main {
         margin: 0;
     }
     .project-box{
-        width: 600%;
+        width: calc(100% * 3);
     }
     .project-item{
         width: 100%;
     }
     .card-box{
-        width: 400%;
+        width: 100%;
     }
     .card-sm{
         width: 100%;

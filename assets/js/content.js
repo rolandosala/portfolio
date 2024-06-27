@@ -92,16 +92,16 @@ const project = [
         img: 'assets/img/clock.jpg'
     },
     {
-        title: 'Digital Clock',
+        title: 'Todo List App',
         description: '',
         technology: [
             { lang: 'Javascript', badge: 'badge bg-success mx-1' },
             { lang: 'HTML', badge: 'badge bg-primary mx-1' },
             { lang: 'CSS', badge: 'badge bg-danger mx-1' },
         ],
-        demo: 'https://rolandosala.github.io/Clock/',
-        repository: 'https://github.com/rolandosala/Clock.git',
-        img: 'assets/img/clock.jpg'
+        demo: 'https://rolandosala.github.io/todoapp/',
+        repository: 'https://github.com/rolandosala/todoapp.git',
+        img: 'assets/img/todolist.png'
     },
     
 ];
