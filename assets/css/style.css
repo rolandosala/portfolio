@@ -406,8 +406,11 @@ main {
         height: auto;
     }
     .certification-container{
-        height: 80vh;
-        background-color: red;
+        height: 60vh;
+        background-color: transparent;
+    }
+    .certification-item{
+        height: inherit;
     }
     .card-box{
         width: 100%;
