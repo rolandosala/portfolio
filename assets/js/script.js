@@ -46,16 +46,37 @@ window.onclick = (event) => {
         <div class="project-container">
             <div class="card-box">
                 <div class="box1">
-                    <ul class="knowledge-list"></ul>
+                    <ul class="title-container"></ul>
                 </div>
-                <div class="box2"></div>
+                <div class="box2">
+                    
+                </div>
             </div>
         </div>`;
-        let knowledge_list = document.querySelector('.knowledge-list');
+        let knowledge_list = document.querySelector('.title-container');
         for (let i = 0; i < knowledge.length; i++) {
             knowledge_list.innerHTML += `
-                <li>${knowledge[i].title}</li>    
+                <li class='title-list'>${knowledge[i].title}</li>    
             `;
+        }
+        let title_list = document.querySelectorAll('.title-list');
+
+        console.log(title_list.length);
+
+        for (let x = 0; x < title_list.length; x++) {
+            loadKnowledgeList(0);
+            title_list[x].onclick = () => {
+                switch (x) {
+                    case 0:
+                        loadKnowledgeList(x);
+                    case 1:
+                        loadKnowledgeList(x);
+                    case 2:
+                        loadKnowledgeList(x);
+                    case 3:
+                        loadKnowledgeList(x);
+                }
+            }
         }
     } else if (event.target == menu_list[3]) {
         content.innerHTML = `
@@ -89,4 +110,20 @@ const hideElement = (element) => {
 window.onload = () => {
     content.innerHTML = `<p class="title">${about_me[0].title}</p>
         <p>${about_me[0].description}</p>`;
+}
+function loadKnowledgeList(index) {
+    let box2 = document.querySelector('.box2');
+    let icons = '';
+    for (let y = 0; y < knowledge[index].list.length; y++) {
+        icons += `
+        <div class='tooltip'>
+             <span class="tooltiptext">${knowledge[index].list[y].name}</span>
+            <img width="48" height="48" src="${knowledge[index].list[y].icon}" alt="" id=""/>
+        </div>`
+        
+    }
+    box2.innerHTML = `
+    <p>${knowledge[index].description}</p>
+    ${icons}`;
+    icons = '';
 }

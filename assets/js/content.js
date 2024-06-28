@@ -2,12 +2,24 @@ const knowledge = [
     {
         title: 'Front-End Development',
         description: 'Intermediate understanding on concepts of building web applications and familiarity on using different frameworks stated below. Please check my projects, Thank you.',
-        list: ['HTML, CSS and Javascript', 'Vue.js', 'Bootstrap', 'JQuery']
+        list: [ 
+            { name: 'HTML', icon: 'https://img.icons8.com/color/48/html-5--v1.png' , alt: 'html-5--v1'},
+            { name: 'CSS', icon: 'https://img.icons8.com/color/48/css3.png' , alt: 'css3'},
+            { name: 'Javascript', icon: 'https://img.icons8.com/color/48/javascript--v1.png' , alt: 'javascript--v1'},
+            { name: 'Vue.js', icon: 'https://img.icons8.com/fluency/48/vuejs.png' , alt: 'vuejs'},
+            { name: 'Bootstrap', icon: 'https://img.icons8.com/color-glass/48/bootstrap.png' , alt: 'bootstrap'},
+        ]
     },
     {
         title: 'Backend-End Development',
         description: 'Basic understanding and familiarity of concepts on storing data and authentication.',
-        list: ['Node.js', 'Express.js', 'PHP', 'MySQL']
+        list: [ 
+            { name: 'Express', icon: 'https://img.icons8.com/color/48/express-js.png' , alt: 'html-5--v1'},
+            { name: 'PHP', icon: 'https://img.icons8.com/ios-filled/50/php-logo.png' , alt: 'css3'},
+            { name: 'MySQL', icon: 'https://img.icons8.com/fluency/48/mysql-logo.png' , alt: 'javascript--v1'},
+            { name: 'Google Cloud Platform', icon: 'https://img.icons8.com/color/48/google-cloud.png' , alt: 'vuejs'},
+            { name: 'Bootstrap', icon: 'https://img.icons8.com/color-glass/48/bootstrap.png' , alt: 'bootstrap'},
+        ]
     },
     {
         title: 'Application Programming Interface',
@@ -91,7 +103,7 @@ const project = [
         repository: 'https://github.com/rolandosala/Clock.git',
         img: 'assets/img/clock.jpg'
     },
-    {
+    /* {
         title: 'Todo List App',
         description: '',
         technology: [
@@ -102,6 +114,6 @@ const project = [
         demo: 'https://rolandosala.github.io/todoapp/',
         repository: 'https://github.com/rolandosala/todoapp.git',
         img: 'assets/img/todolist.png'
-    },
+    }, */
     
 ];

@@ -64,7 +64,7 @@ main {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     border-radius: 20px;
-    height: 100%;
+    height: auto;
     padding: 4em;
     font-family: 'Poppins';
     margin-left: 1em;
@@ -127,9 +127,7 @@ main {
     background-color: transparent;
     height: 50vh;
     width: 100%;
-    overflow: hidden;
-    overflow-x: scroll;
-    overflow-y: hidden;
+    overflow: scroll;
 }
 .project-box{
     display: flex;
@@ -151,7 +149,12 @@ main {
     padding: .5em;
 }
 .box2{
-    background-color: #41C9E2;
+    background-color: red;
+    padding: 1em;
+}
+.box2 img{
+    margin-top: 1em;
+    align-items: center;
 }
 .box1 ul li, .certification-item ul li{
     padding: 10px;
@@ -306,6 +309,48 @@ main {
     cursor: pointer;
     box-shadow: 2px 2px 4px gray, -2px -2px 4px gray;
 }
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    
+  }
 @media (min-width: 700px){
     .sidebar{
         left: 0%;
@@ -347,16 +392,30 @@ main {
     }
     .main-container{
         padding: 1.5em;
-        height: 100%;
+        height: auto;
         margin: 0;
     }
     .project-box{
-        width: calc(100% * 3);
+        width: calc(100% * 2);
     }
     .project-item{
         width: 100%;
     }
+    .project-container{
+        background-color: transparent;
+        height: auto;
+    }
+    .certification-container{
+        height: 80vh;
+        background-color: red;
+    }
     .card-box{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        background-color: red;
+    }
+    .box1, .box2{
         width: 100%;
     }
     .card-sm{
