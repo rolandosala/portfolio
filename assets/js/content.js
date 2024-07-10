@@ -115,8 +115,20 @@ const project = [
         repository: 'https://github.com/rolandosala/Clock.git',
         img: 'assets/img/clock.jpg'
     },
-    /* {
-        title: 'Todo List App',
+    {
+        title: 'Quiz Game',
+        description: '',
+        technology: [
+            { lang: 'Javascript', badge: 'badge bg-success mx-1' },
+            { lang: 'HTML', badge: 'badge bg-primary mx-1' },
+            { lang: 'CSS', badge: 'badge bg-danger mx-1' },
+        ],
+        demo: 'https://rolandosala.github.io/nihongo_quiz_game/',
+        repository: 'https://github.com/rolandosala/nihongo_quiz_game.git',
+        img: 'assets/img/clock.jpg'
+    },
+    {
+        title: 'Todo App',
         description: '',
         technology: [
             { lang: 'Javascript', badge: 'badge bg-success mx-1' },
@@ -125,7 +137,7 @@ const project = [
         ],
         demo: 'https://rolandosala.github.io/todoapp/',
         repository: 'https://github.com/rolandosala/todoapp.git',
-        img: 'assets/img/todolist.png'
-    }, */
+        img: 'assets/img/clock.jpg'
+    },
     
 ];

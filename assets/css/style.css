@@ -125,15 +125,15 @@ main {
 }
 .project-container{
     background-color: transparent;
-    height: 50vh;
+    height: 55vh;
     width: 100%;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 .project-box{
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: 95%;
+    width: calc(35% * 4);
+    height: auto;
 }
 .card-box {
     width: 100%;
@@ -396,7 +396,7 @@ main {
         margin: 0;
     }
     .project-box{
-        width: calc(100% * 2);
+        width: calc(100% * 4);
     }
     .project-item{
         width: 100%;
