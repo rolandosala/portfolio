@@ -1,7 +1,7 @@
 const knowledge = [
     {
         title: 'Front-End Development',
-        description: 'Intermediate understanding on concepts of building web applications and familiarity on using different frameworks stated below. Please check my projects, Thank you.',
+        description: 'Has intermidiate knowledge on building web interfaces or user interfaces for the client side using the tools stated below. With knowledge also on using css and javascript frameworks/libraries.',
         list: [ 
             { name: 'HTML', icon: 'https://img.icons8.com/color/48/html-5--v1.png' , alt: 'html-5--v1'},
             { name: 'CSS', icon: 'https://img.icons8.com/color/48/css3.png' , alt: 'css3'},
@@ -12,7 +12,7 @@ const knowledge = [
     },
     {
         title: 'Backend-End Development',
-        description: 'Basic understanding and familiarity of concepts on storing data and authentication.',
+        description: 'Basic understanding and familiarity of concepts in Backend Technology, using the technologies stated. Familiarity with, API\'s, Data Storage and Authentication',
         list: [ 
            /*  { name: 'Express', icon: 'https://img.icons8.com/color/48/express-js.png' , alt: 'html-5--v1'}, */
             { name: 'PHP', icon: 'https://img.icons8.com/ios-filled/50/php-logo.png' , alt: 'css3'},
@@ -23,7 +23,7 @@ const knowledge = [
     },
     {
         title: 'Web and Graphic Design',
-        description: 'Basic understanding and familiarity on testing request and response using API using the tool below.',
+        description: 'Has knowledge with the tools stated in creating user interfaces, graphic design and web design.',
         list: [
             { name: 'Photoshop', icon: 'https://img.icons8.com/color/48/adobe-photoshop--v1.png' , alt: 'Photoshop'},
             { name: 'Figma', icon: 'https://img.icons8.com/color/48/figma--v1.png' , alt: 'Figma'},
@@ -39,7 +39,7 @@ const knowledge = [
 const about_me = [
     {
         title: 'About me',
-        description: 'Graduated with degree in BS in Information Technology, experienced working in IT industry as Technical and Product Support. Involved in product testing and reporting, software troubleshooting and onboarding. Attended trainings to upskill, developed personal projects and website. Which I believed to give me a brighter career.'
+        description: 'Aspiring web developer, with experienced working in the Information Technology industry as Technical and Product support for over a year. Involved working with projects, by doing software testing, client support and data migration support. Familiarity in front-end, back-end technology and api\'s.'
     }
 ];
 
